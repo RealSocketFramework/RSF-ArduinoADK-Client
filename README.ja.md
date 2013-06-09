@@ -19,7 +19,8 @@ RealSocketFrameworkは将来的には、Bluetooth経由やイーサネットシ�
 * [Document](https://github.com/RealSocketFramework/RSF-ArduinoADK-Client/wiki/Document)
 
 ##License
-MIT
+[RealSocket](https://github.com/RealSocketFramework/RSF-ArduinoADK-Client/tree/master/Arduino-Libraries/RealSocket)
+のライセンスはMIT License。
 
 ##ライブラリ
 RealSocketFrameworkでは以下のライブラリを使用しています。
