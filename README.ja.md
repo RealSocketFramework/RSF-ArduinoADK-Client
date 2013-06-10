@@ -7,7 +7,7 @@ WebSocketでの通信はReal Socket Frameworkが提供しているサーバを�
  サーバサイドのプログラミングは一切不要で、Arudinoスケッチのみの開発だけで通信することができます。
 
 
-RSF-ArduinoADK-Client v0.1.0はArduino ADKボードとAndroidをUSBケーブルで接続して、
+RSF-ArduinoADK-Client v0.1.0は[Arduino ADKボード](http://arduino.cc/en/Main/ArduinoBoardADK)とAndroidをUSBケーブルで接続して、
 Real Socket Frameworkサーバと通信するためのライブラリです。
 サーバとのWebSocket通信はAndroidから行い、
 ArduinoとAndroid間の通信はUSBケーブル経由でADKを使用して通信しています。
