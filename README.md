@@ -11,7 +11,7 @@ RSF-ArduinoADK-Client v0.1.0 is library to connect RSF server connect with USB b
 The connection of these are used with ADK between USB and server and WebSocket connected by Android.
 
 
-Real Socket Framework is aimed to expand framework to connect whether by Bluetooth or Ethernet Shield in near the future.
+Real Socket Framework is aimed to expand the framework to connect whether by Bluetooth or Ethernet Shield in near the future.
 
 
 * [QuickStart](https://github.com/RealSocketFramework/RSF-ArduinoADK-Client/wiki/QuickStart)
