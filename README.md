@@ -19,10 +19,10 @@ Real Socket Framework is aimed to expand the framework to connect whether by Blu
 
 ##License
 [RealSocket](https://github.com/RealSocketFramework/RSF-ArduinoADK-Client/tree/master/Arduino-Libraries/RealSocket)
-のライセンスはMIT License。
+’s license is MIT License.
 
 ##Library
-RealSocketFrameworkでは以下のライブラリを使用しています。
+Real Socket Framework is using library below.
 * [aJson](https://github.com/interactive-matter/aJson)
 * [USB_Host_Shield](https://github.com/felis/USB_Host_Shield)
 * [AndroidAccessory](http://developer.android.com/tools/adk/adk2.html)
