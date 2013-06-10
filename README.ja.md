@@ -18,8 +18,8 @@ ArduinoとAndroid間の通信はUSBケーブル経由でADKを使用して通信
 Real Socket Frameworkは将来的には、Bluetooth経由や[イーサネットシールド](http://arduino.cc/en/Main/ArduinoEthernetShield)からでも
 通信できるようにFrameworkを拡張していく予定です。
 
-* [QuickStart](https://github.com/RealSocketFramework/RSF-ArduinoADK-Client/wiki/QuickStart)
-* [Document](https://github.com/RealSocketFramework/RSF-ArduinoADK-Client/wiki/Document)
+* [QuickStart](https://github.com/RealSocketFramework/RSF-ArduinoADK-Client/wiki/QuickStart_ja)
+* [Document](https://github.com/RealSocketFramework/RSF-ArduinoADK-Client/wiki/Document_ja)
 
 ##License
 [RealSocket](https://github.com/RealSocketFramework/RSF-ArduinoADK-Client/tree/master/Arduino-Libraries/RealSocket)
