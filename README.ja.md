@@ -1,10 +1,13 @@
 RSF-ArduinoADK-Client v0.1.0
 =====================
+現在トライアルユーザ受付中です。2013年7月にベータリリースを予定しています。
+
+
 http://realsocketframework.com/
   
-Real Socket FrameworkはArduino同士をWebSocket通信でデータを同期できるフレームワークです。
+Real Socket Frameworkはモノ同士をリアルソケット通信でデータを同期できるフレームワークです。
 WebSocketでの通信はReal Socket Frameworkが提供しているサーバを経由して自動的に通信します。
- サーバサイドのプログラミングは一切不要で、Arudinoスケッチのみの開発だけで通信することができます。
+ サーバサイドのプログラミングは一切不要で、クライアントサイドのみの開発だけで通信することができます。
 
 
 RSF-ArduinoADK-Client v0.1.0は[Arduino ADKボード](http://arduino.cc/en/Main/ArduinoBoardADK)とAndroidをUSBケーブルで接続して、
