@@ -1,5 +1,7 @@
 RSF-ArduinoADK-Client v0.1.0
 =====================
+####Now we are wanted limited time trial user! It will release β version July,2013.
+
 http://realsocketframework.com/
   
 Real Socket Framework is the framework that can sync each data with WebSocket between Arduino and other one.
