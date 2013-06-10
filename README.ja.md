@@ -12,7 +12,7 @@ Real Socket Frameworkサーバと通信するためのライブラリです。
 サーバとのWebSocket通信はAndroidから行い、
 ArduinoとAndroid間の通信はUSBケーブル経由でADKを使用して通信しています。
 
-Real Socket Frameworkは将来的には、Bluetooth経由やイーサネットシールドからでも
+Real Socket Frameworkは将来的には、Bluetooth経由や[イーサネットシールド](http://arduino.cc/en/Main/ArduinoEthernetShield)からでも
 通信できるようにFrameworkを拡張していく予定です。
 
 * [QuickStart](https://github.com/RealSocketFramework/RSF-ArduinoADK-Client/wiki/QuickStart)
@@ -20,7 +20,7 @@ Real Socket Frameworkは将来的には、Bluetooth経由やイーサネット�
 
 ##License
 [RealSocket](https://github.com/RealSocketFramework/RSF-ArduinoADK-Client/tree/master/Arduino-Libraries/RealSocket)
-のライセンスはMIT License。
+のライセンスはMIT Licenseです。
 
 ##ライブラリ
 Real Socket Frameworkでは以下のライブラリを使用しています。
