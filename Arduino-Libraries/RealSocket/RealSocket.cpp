@@ -135,12 +135,12 @@ void RealSocket::syncInt(char id,int value){
   }
 
   aJsonObject* obj = aJson.createObject();
-   aJson.addStringToObject(obj,"t","sync");
-   aJson.addNumberToObject(obj,"v",value);
-   aJson.addNumberToObject(obj,"version",data->version());
-   aJson.addNumberToObject(obj,"id",id);
-   emit(obj);
-   aJson.deleteItem(obj);
+  aJson.addStringToObject(obj,"t","sync");
+  aJson.addNumberToObject(obj,"v",value);
+  aJson.addNumberToObject(obj,"version",data->version());
+  aJson.addNumberToObject(obj,"id",id);
+  emit(obj);
+  aJson.deleteItem(obj);
 }
 int RealSocket::getSyncInt(char id){
   SyncData* data = m_datas[id];
