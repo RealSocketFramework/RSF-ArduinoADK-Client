@@ -4,9 +4,9 @@ RSF-ArduinoADK-Client v0.1.0
 
 http://realsocketframework.com/
   
-Real Socket Framework is the framework that can sync each data with WebSocket between Arduino and other one.
-WebSocket connection can connect with only developing Arduino sketch 
-without programing of server side cause of automatically connected server provided by Real Socket Framework.
+Real Socket Framework is the framework that can sync each data with Realtime Web between Things and other one.
+WebSocket connection can connect with only developing client side programming
+without server side programing cause of automatically connected server provided by Real Socket Framework.
 
 
 RSF-ArduinoADK-Client v0.1.0 is library to connect RSF server connect 
