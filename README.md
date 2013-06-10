@@ -7,11 +7,13 @@ WebSocket connection can connect with only developing Arduino sketch
 without programing of server side cause of automatically connected server provided by Real Socket Framework.
 
 
-RSF-ArduinoADK-Client v0.1.0 is library to connect RSF server connect with USB between Arduino ADK board and Android.
+RSF-ArduinoADK-Client v0.1.0 is library to connect RSF server connect 
+with USB between [Arduino ADK board](http://arduino.cc/en/Main/ArduinoBoardADK) and Android.
 The connection of these are used with ADK between USB and server and WebSocket connected by Android.
 
 
-Real Socket Framework is aimed to expand the framework to connect whether by Bluetooth or Ethernet Shield in near the future.
+Real Socket Framework is aimed to expand the framework to connect 
+whether by Bluetooth or [Ethernet Shield](http://arduino.cc/en/Main/ArduinoEthernetShield) in near the future.
 
 
 * [QuickStart](https://github.com/RealSocketFramework/RSF-ArduinoADK-Client/wiki/QuickStart)
