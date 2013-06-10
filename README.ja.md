@@ -5,7 +5,7 @@ RSF-ArduinoADK-Client v0.1.0
 
 http://realsocketframework.com/
   
-Real Socket Frameworkはモノ同士をリアルソケット通信でデータを同期できるフレームワークです。
+Real Socket FrameworkはモノとモノをRealtime Webで繋ぐ開発プラットフォームです。
 WebSocketでの通信はReal Socket Frameworkが提供しているサーバを経由して自動的に通信します。
  サーバサイドのプログラミングは一切不要で、クライアントサイドのみの開発だけで通信することができます。
 
