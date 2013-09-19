@@ -1,16 +1,21 @@
 
-#include <Max3421e.h>
+/**
+ *  LedSwiring : Sample code for the Real Socket Framework(RSF)
+ */
 #include <Usb.h>
-#include <AndroidAccessory.h>
 #include <aJSON.h>
 #include <RealSocket.h>
 
-RealSocket rs("xxxx");
+RealSocket rs("Your API Key");
+const int ID_COUNT = 1;
 
-const int buttonPin = 7;
-const int greenPin =10;
-const int bluePin = 11;
-const int redPin = 12;
+const int buttonPin= 7;
+const int greenPin = 10;
+const int bluePin  = 11;
+const int redPin   = 12;
+
+int  prevButtonState = LOW;
+
 
 void setup() {
   Serial.begin(9600);
@@ -32,15 +37,31 @@ void setup() {
   digitalWrite(redPin,LOW);
   delay(200);
   
-  rs.onConnected(&onConnected);
-  rs.onSyncUpdate(&onSyncUpdate);
+  // Initializing RealSocket object.
+  rs.onConnected(&onConnected);    // Set connected callback function.
+  rs.onSyncUpdate(&onSyncUpdate);  // Set updated callback function.
+  rs.onError(&onError);            // Set error callback function.
   rs.connect();
 }
-const int ID_COUNT = 0;
+
+void loop(){
+  rs.update();
+ if(rs.isConnected()){
+   int buttonState = digitalRead(buttonPin);
+   if(buttonState ==HIGH && prevButtonState == LOW){
+     rs.syncInt(ID_COUNT,rs.getSyncInt(ID_COUNT) + 1 );
+   }
+   prevButtonState = buttonState;
+ }
+ delay(17);
+}
+
+
 void onConnected(){
-  Serial.println('onConnected realSocket');
+  Serial.println("onConnected RealSocket");
   rs.initSyncInt(ID_COUNT,0);
 }
+
 void onSyncUpdate(char id){
   if(id == ID_COUNT){
     digitalWrite(redPin,LOW);
@@ -60,16 +81,8 @@ void onSyncUpdate(char id){
   }
 }
 
-int  prevButtonState = LOW;
-
-void loop(){
-  rs.update();
- if(rs.isConnected()){
-   int buttonState = digitalRead(buttonPin);
-   if(buttonState ==HIGH && prevButtonState == LOW){
-     rs.syncInt(ID_COUNT,rs.getSyncInt(ID_COUNT) + 1 );
-   }
-   prevButtonState = buttonState;
- }
- delay(17);
+void onError(int errorCode) {
+  Serial.print("RSF onError: error code = ");
+  Serial.println(errorCode);
 }
+

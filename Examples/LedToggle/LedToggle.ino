@@ -1,15 +1,19 @@
-#include <Max3421e.h>
+/**
+ *  LedToggle : Sample code for the Real Socket Framework(RSF)
+ */
 #include <Usb.h>
-#include <AndroidAccessory.h>
 #include <aJSON.h>
 #include <RealSocket.h>
 
 //Set your api key and Create RealSocket object.
-RealSocket rs("xxxx");
+RealSocket rs("Your API Key");
+const int ID_COUNT = 0;
 
 const int buttonPin = 7;
-const int ledPin =10;
-const int ID_COUNT = 0;
+const int ledPin = 10;
+
+int  prevButtonState = LOW;
+
 
 void setup() {
   Serial.begin(9600);
@@ -20,22 +24,6 @@ void setup() {
   rs.onSyncUpdate(&onSyncUpdate);
   rs.connect();
 }
-
-void onConnected(){
-  rs.initSyncInt(ID_COUNT,0);
-}
-
-void onSyncUpdate(char id){
-  if(id == ID_COUNT){
-    int value = rs.getSyncInt(id);
-	if(value % 2 == 0){
-		digitalWrite(greenPin,HIGH);
-	}else{
-		digitalWrite(greenPin,LOW);
-	}
-  }
-}
-int  prevButtonState = LOW;
 
 void loop(){
   rs.update();
@@ -48,3 +36,27 @@ void loop(){
  }
  delay(17);
 }
+
+
+void onConnected(){
+  Serial.println("onConnected RealSocket");
+  rs.initSyncInt(ID_COUNT,0);
+}
+
+void onSyncUpdate(char id){
+  if(id == ID_COUNT){
+    int value = rs.getSyncInt(id);
+      if(value % 2 == 0){
+        digitalWrite(ledPin,HIGH);
+      }else{
+        digitalWrite(ledPin,LOW);
+      }
+  }
+}
+
+void onError(int errorCode) {
+  Serial.print("RSF onError: error code = ");
+  Serial.println(errorCode);
+}
+
+
