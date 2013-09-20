@@ -1,4 +1,4 @@
-RSF-ArduinoADK-Client v0.1.0
+RSF-ArduinoADK-Client v0.2.0
 =====================
 ####Now we are wanted limited time trial user! It will release β version July,2013.
 
@@ -9,7 +9,7 @@ WebSocket connection can connect with only developing client side programming
 without server side programing cause of automatically connected server provided by Real Socket Framework.
 
 
-RSF-ArduinoADK-Client v0.1.0 is library to connect RSF server connect 
+RSF-ArduinoADK-Client v0.2.0 is library to connect RSF server connect 
 with USB between [Arduino ADK board](http://arduino.cc/en/Main/ArduinoBoardADK) and Android.
 The connection of these are used with ADK between USB and server and WebSocket connected by Android.
 
